@@ -1,0 +1,123 @@
+@use 'colors'
+
+html
+    font-size: 62.5%
+    background-color: colors.$main_background
+
+h1, p
+    font-family: 'Inter', sans-serif
+
+li
+    font-family: 'Lexend Deca', sans-serif
+    font-size: clamp(1.2rem, 1.3vw, 1.8rem)
+    color: colors.$stats_headings
+    text-transform: uppercase
+    line-height: 1.5
+
+main
+    min-height: 95vh
+    display: flex
+    justify-content: center
+    align-items: center
+
+.image
+    width: 50%
+    border-top-right-radius: 1.2rem
+    border-bottom-right-radius: 1.2rem
+    background-image: url("../images/image-header-desktop.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: right
+    background-color: colors.$image_tint
+    background-blend-mode: multiply
+    filter: contrast(85%)
+
+.container
+    display: flex
+    height:  clamp(20rem, 36.33vw, 44.8rem)   
+    width: clamp(50rem, 90vw,111rem)  
+    
+
+.text
+    display: flex
+    flex-direction: column
+    max-width: 50%
+    background-color: colors.$card_background
+    border-bottom-left-radius: 1.2rem
+    border-top-left-radius: 1.2rem
+
+.text2
+    padding: 8% 10% 0 12%
+
+.stats
+    display: flex
+
+.stat
+    font-family:'Inter', sans-serif
+    font-weight: 700
+    color: colors.$stats
+    font-size: clamp(2rem, 1.8vw, 2.4rem)
+
+h1
+    font-size: clamp(2.4rem, 3.2vw, 3.9rem)
+    color: colors.$main_heading
+
+p
+    font-size: clamp(1.4rem, 1.4vw, 1.8rem)
+    line-height: 1.6
+    color: hsla(0, 0%, 100%, 0.75)
+    
+
+.accent
+    color: colors.$heading_accent
+
+ul  
+    display: flex 
+    justify-content: space-between 
+    list-style: none
+    padding-left: 0
+    padding-top: 2rem
+
+.attribution  
+    color: colors.$footer
+    font-size: 1.1rem 
+    text-align: center
+
+.attribution a  
+    color: colors.$footer_links
+
+@media screen and (max-width: 850px) 
+    
+    .container
+        flex-direction: column-reverse
+        justify-content: flex-end
+        width: 90%
+        height: 100%
+    
+    .image
+        width: 100%
+        height: 65vw
+        align-self: flex-end
+        border-radius: 1.2rem 1.2rem 0 0
+        background-image: url("../images/image-header-mobile.jpg")
+
+    h1, p
+        text-align: center
+
+    .text 
+        max-width: 100%
+        flex-grow: 2
+        border-radius: 0 0 1.2rem 1.2rem
+
+    .text2
+        padding: 4% 10% 12% 12%
+
+@media screen and (max-width: 450px) 
+    .stats
+        display: block
+        text-align: center
+    li
+        padding: 1rem
+    
+
+    
