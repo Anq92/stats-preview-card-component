@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [stats-preview-card-aw.netlify.app](stats-preview-card-aw.netlify.app)
+- Live Site URL: [stats-preview-card-aw.netlify.app](https://stats-preview-card-aw.netlify.app)
 
 ## My process
 
